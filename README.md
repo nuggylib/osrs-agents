@@ -1,4 +1,4 @@
-# osrs-mcp
+# osrs-agents
 
 _under construction_
 
