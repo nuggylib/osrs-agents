@@ -5,10 +5,31 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@anthropic-ai/sdk@npm:^0.56.0":
+  version: 0.56.0
+  resolution: "@anthropic-ai/sdk@npm:0.56.0"
+  bin:
+    anthropic-ai-sdk: bin/cli
+  checksum: 10c0/b8506daa740b3700c56cf7e7cd16c5f3c092b96ad0bca893530d3e12ed543bdae174ea5e34b270ba86958f193a8ac31559f17ed4a79ba9219771d3c457e15c06
+  languageName: node
+  linkType: hard
+
 "@cfworker/json-schema@npm:^4.0.2":
   version: 4.1.1
   resolution: "@cfworker/json-schema@npm:4.1.1"
   checksum: 10c0/b5253486d346b7de6feec9c73954f612b11019dacb9023d710a5666df2f5fc145dd88b6b913c88726c6d97e2e258a515fa2cab177f58b18da6bac3738cbc4739
+  languageName: node
+  linkType: hard
+
+"@langchain/anthropic@npm:^0.3.28":
+  version: 0.3.28
+  resolution: "@langchain/anthropic@npm:0.3.28"
+  dependencies:
+    "@anthropic-ai/sdk": "npm:^0.56.0"
+    fast-xml-parser: "npm:^4.4.1"
+  peerDependencies:
+    "@langchain/core": ">=0.3.58 <0.4.0"
+  checksum: 10c0/d1fecdfdd2c92833d66205afdb61fc926ba16db03b5fdb6eb9d2f57161b6ffc6fbd0c28dfa582fef79500c3fdd74fb1dd8cd06c0160a00c0e36d321cdca8eb44
   languageName: node
   linkType: hard
 
@@ -153,6 +174,17 @@ __metadata:
   version: 4.0.7
   resolution: "eventemitter3@npm:4.0.7"
   checksum: 10c0/5f6d97cbcbac47be798e6355e3a7639a84ee1f7d9b199a07017f1d2f1e2fe236004d14fa5dfaeba661f94ea57805385e326236a6debbc7145c8877fbc0297c6b
+  languageName: node
+  linkType: hard
+
+"fast-xml-parser@npm:^4.4.1":
+  version: 4.5.3
+  resolution: "fast-xml-parser@npm:4.5.3"
+  dependencies:
+    strnum: "npm:^1.1.1"
+  bin:
+    fxparser: src/cli/cli.js
+  checksum: 10c0/bf9ccadacfadc95f6e3f0e7882a380a7f219cf0a6f96575149f02cb62bf44c3b7f0daee75b8ff3847bcfd7fbcb201e402c71045936c265cf6d94b141ec4e9327
   languageName: node
   linkType: hard
 
@@ -329,6 +361,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "osrs-agents@workspace:."
   dependencies:
+    "@langchain/anthropic": "npm:^0.3.28"
     "@langchain/core": "npm:^0.3.77"
     langchain: "npm:^0.3.34"
   languageName: unknown
@@ -390,6 +423,13 @@ __metadata:
   version: 1.1.2
   resolution: "simple-wcswidth@npm:1.1.2"
   checksum: 10c0/0db23ffef39d81a018a2354d64db1d08a44123c54263e48173992c61d808aaa8b58e5651d424e8c275589671f35e9094ac6fa2bbf2c98771b1bae9e007e611dd
+  languageName: node
+  linkType: hard
+
+"strnum@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "strnum@npm:1.1.2"
+  checksum: 10c0/a0fce2498fa3c64ce64a40dada41beb91cabe3caefa910e467dc0518ef2ebd7e4d10f8c2202a6104f1410254cae245066c0e94e2521fb4061a5cb41831952392
   languageName: node
   linkType: hard
 

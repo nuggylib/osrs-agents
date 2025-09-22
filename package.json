@@ -2,6 +2,7 @@
   "name": "osrs-agents",
   "packageManager": "yarn@4.1.1",
   "dependencies": {
+    "@langchain/anthropic": "^0.3.28",
     "@langchain/core": "^0.3.77",
     "langchain": "^0.3.34"
   }
